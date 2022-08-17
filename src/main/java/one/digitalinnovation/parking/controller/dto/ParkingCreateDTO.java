@@ -7,7 +7,7 @@ public class ParkingCreateDTO {
     private String model;
     private String color;
 
-    public String getLicense() {
+    public String getLicense(String s) {
         return license;
     }
 
