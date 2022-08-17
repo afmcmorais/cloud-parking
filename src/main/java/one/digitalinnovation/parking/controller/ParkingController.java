@@ -52,7 +52,7 @@ public class ParkingController {
     @DeleteMapping("/{id}")
     public ResponseEntity delete(@PathVariable String id) {
         parkingService.delete(id);
-        return ResponseEntity.noContent().build;
+        return ResponseEntity.noContent().build();
     }
 
     @PostMapping
@@ -76,4 +76,5 @@ public class ParkingController {
         Parking parking = parkingService.checkOut(id);
         return ResponseEntity.ok(parkingMapper.toParkingDTO(parking));
     }
+
 }
